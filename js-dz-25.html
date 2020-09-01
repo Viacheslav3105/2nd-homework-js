@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+    <script>
+        'use strict';
+        let arg1 = +prompt('Введите значение 1ой переменной: ');
+        let arg2 = +prompt('Введите значение 2ой переменной: ');
+        let operation = prompt('Введите арифметическую операцию: ');
+        let rez = null;
+        
+        function mathOperation (arg1, arg2, operation) {
+        switch (operation) {
+            case 'сложение' :
+                rez = arg1 + arg2;
+                return rez;
+
+            case 'вычитание':
+                rez = arg1 - arg2;
+                return rez;
+
+            case 'деление':
+                 rez = (arg1 / arg2);
+                return rez;
+                
+            case 'умножение':
+                 rez = arg1 * arg2;
+                return rez;
+                        }
+        }
+        
+        mathOperation (arg1, arg2, operation);
+        alert(rez);
+    </script>

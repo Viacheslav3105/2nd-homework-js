@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict';
+        let a= +prompt("Введите значение переменной a");
+        let b= +prompt("Введите значение переменной b");
+        let c = null;
+        
+        if  ( (a >= 0) && (b >= 0) ) {
+            c = a - b; 
+        }
+        else if  ( (a < 0) && (b < 0) ) {
+            c = a * b; 
+        }
+        else if ((( a < 0) && (b > 0)) || ((a > 0) && (b < 0))) {
+            c = a + b; 
+        }
+        
+        alert(c);
+    </script>
+</body>
+</html>

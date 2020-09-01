@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict';
+        let a=1;
+        let b=1;
+        let c = null;
+        let d = null;
+        
+        //пример 1
+        c = ++a;
+        alert(c); //ответ: 2
+        
+        //пример 2
+        d = b++;
+        alert(d); //ответ: 1
+        
+       /* //пример 3
+        с = 2 + ++a;
+        alert(c); //ответ: 5*/
+        
+        //пример 4
+        d = 2 + b++;
+        alert(d); //ответ: 4
+        
+        alert(a); //ответ: 3
+        alert(b); //ответ: 3
+        
+    </script>
+</body>
+</html>
